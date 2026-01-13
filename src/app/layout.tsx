@@ -1,5 +1,11 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import '../styles/global.css'
+
+export const metadata: Metadata = {
+  title: 'PTSD App',
+  description: 'Next.js application',
+}
 
 export default function RootLayout({
   children,
