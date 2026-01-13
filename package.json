@@ -10,7 +10,7 @@
     "lint": "eslint ./src --fix",
     "format": "prettier ./src --write",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "node -e \"if (process.env.CI !== 'true' && process.env.VERCEL !== '1') { try { const husky = require('husky'); if (husky.install) husky.install() } catch (e) {} }\""
   },
   "dependencies": {
     "clsx": "^2.1.1",
