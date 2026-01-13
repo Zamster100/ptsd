@@ -8,9 +8,6 @@ const nextConfig = {
     // Optimize for production
     optimizePackageImports: ['react', 'react-dom'],
   },
-
-  // Output configuration for Vercel
-  output: 'standalone',
 }
 
 export default nextConfig
